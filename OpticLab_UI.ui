@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>860</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Menu">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>331</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>331</width>
+      <height>381</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>331</width>
+      <height>381</height>
+     </size>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <widget class="QWidget" name="module">
+     <attribute name="title">
+      <string>Module</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>141</width>
+        <height>129</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>81</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="pixelsize_layout">
+       <item>
+        <widget class="QLabel" name="pixlesize_label">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Pixel Size (um)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pixelsize_line">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sensitivity_label">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>AF Sensitivty</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sensitivity_line">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0.000125</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="peakmin_label">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PeakMin SFR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="peakmin_SFR_line">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>30</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>171</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="module_load_file_btn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>169</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Load File</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="include_graph_check">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>111</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string> Include Graph</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="module_save_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>151</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Save Report</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="module_update_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>151</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Update DB</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>141</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="pixel_x_label_2">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Pixel X</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pixel_x_line">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string>4096</string>
+         </property>
+         <property name="maxLength">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="pixel_y_label_2">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Pixel Y</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pixel_y_line">
+         <property name="minimumSize">
+          <size>
+           <width>129</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>3072</string>
+         </property>
+         <property name="maxLength">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>171</width>
+        <height>85</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="SFR_plot_btn">
+         <property name="text">
+          <string>SFR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="shading_plot_btn">
+         <property name="text">
+          <string>OC/RI</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="TF_plot_btn">
+         <property name="text">
+          <string>Through</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="FP_plot_btn">
+         <property name="text">
+          <string>Focal Plane</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="sensitivity_label_2">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>159</y>
+        <width>139</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>129</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Plot Graphs</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="HR">
+     <attribute name="title">
+      <string>HR</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>41</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>51</width>
+        <height>41</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="Fno_Layout">
+       <item>
+        <widget class="QLabel" name="Fno_label">
+         <property name="minimumSize">
+          <size>
+           <width>49</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>49</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Fno</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Fno_line">
+         <property name="minimumSize">
+          <size>
+           <width>49</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>49</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1.8</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>141</width>
+        <height>84</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>141</width>
+        <height>84</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>141</width>
+        <height>84</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="lens_EFL_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>EFL</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="lens_RI_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>RI</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="lens_MTF_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>MTF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="lens_CRA_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>59</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>CRA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="lens_lateral_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Lateral</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="lens_LSA_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>LSA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="lens_dist_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Distortion</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="lens_TF_check">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Through</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="lens_save_report_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Save Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lens_update_db_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Update DB</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lens_analyze_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>81</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>81</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Analyze</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lens_load_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>141</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Load Lens Data(MHT)</string>
+      </property>
+     </widget>
+     <widget class="Line" name="lens_line">
+      <property name="geometry">
+       <rect>
+        <x>153</x>
+        <y>0</y>
+        <width>20</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>351</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>20</width>
+        <height>351</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="script_make_btn">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>151</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Make Script</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>50</y>
+        <width>151</width>
+        <height>122</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>151</width>
+        <height>122</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>122</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="operator_label">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Operator</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="MTF_freq_label">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>MTF_Freq</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="Image_height_label">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Image Height</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="script_operator_line">
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>LKW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="script_freq_line">
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>98</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="sensor_label">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>75</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Sensor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="script_sensor_line">
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>JN5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="script_ih_line">
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>6.52</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>200</y>
+        <width>151</width>
+        <height>84</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>151</width>
+        <height>84</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>151</width>
+        <height>84</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="script_EFL_check">
+         <property name="minimumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <italic>false</italic>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="text">
+          <string>EFL</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="script_RI_check">
+         <property name="minimumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>RI</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="script_MTF_check">
+         <property name="minimumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>MTF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="script_CRA_check">
+         <property name="minimumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>69</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>CRA</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="script_lateral_check">
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Lateral</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="script_LSA_check">
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>LSA</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="script_dist_check">
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Distortion</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="script_TF_check">
+         <property name="minimumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>74</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Through</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="script_item_label">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>180</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>101</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>101</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="text">
+       <string># Measure Item</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>290</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="posfile_layout">
+       <item>
+        <widget class="QCheckBox" name="posfile_check">
+         <property name="text">
+          <string>Use Position File</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="posfile_line">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>posfile.fld</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Spectrum">
+     <attribute name="title">
+      <string>%T/%R</string>
+     </attribute>
+     <widget class="QPushButton" name="t_load">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>121</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Transmittance</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r_load">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>121</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Reflectance</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="t_save_report">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>121</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Save Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r_save_report">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>121</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Save Report</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>16</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>16</width>
+        <height>81</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="spectrum_save_DB">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>281</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>281</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Save Opticlab DB</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="QE">
+     <attribute name="title">
+      <string>QE</string>
+     </attribute>
+     <widget class="QLabel" name="QE_Construction">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>160</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>QE Analyzer</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>20</y>
+      <width>20</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>361</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>361</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_event">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>500</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>361</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>361</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>Menu</tabstop>
+  <tabstop>pixelsize_line</tabstop>
+  <tabstop>sensitivity_line</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
